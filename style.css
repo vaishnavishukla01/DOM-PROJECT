@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+.page{
+    height: 100%;
+    width: 100%;
+    background-image: url(https://images.unsplash.com/photo-1706362723628-60e8f1929ffe?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-position:center ;
+    background-repeat:no-repeat ;
+}
+.top{
+    height: 12%;
+    width: 100%;
+    background-color:transparent;
+    padding: 1px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.left{
+    height: 70%;
+    width: 10%;
+    background-color: transparent;
+    margin-left: 5%;
+    margin-top: 9px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.left h1:hover{
+    transition:  all 2s;
+    color:greenyellow ; 
+    font-size: 40px; 
+}
+.left h1{
+    font-size: 30px;
+    font-family: 900;
+    color: white;
+}
+.code{
+    color: blue;
+    font-size: 30px;
+    font-family: cursive;
+}
+.right{
+    height: 70%;
+    width: 40%;
+    background-color: transparent;
+    margin-right: 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}   
+.right a{
+    position: relative;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    text-transform: capitalize;
+     transition: all 2s; 
+
+}
+.right a:hover{
+    color:  black;
+    font-size: 25px;
+    font-family: cursive;
+}
+  .right .drop{
+    outline: none;
+    border:none ;
+    background-color: transparent;
+    color: white;
+    font-size:20px ;
+    transition: all 2s;
+}
+.drop:hover{
+    color:  black;
+    font-size: 25px;
+
+}
+.page  button{
+    margin-top: 30%;
+    margin-left: 50%;
+    padding: 10px 10px;
+    background-color: transparent;
+    color: white;
+    border-radius: 20%;
+    cursor: pointer;
+}
+@media only screen and ( min-width:200px) and (max-width:600px){
+ .drop {
+    display:none ;
+
+ } 
+ .page{
+    height: 80%;
+
+ }
+ .page  button{
+    margin-top: 60%;
+    margin-left: 30%;
+ } 
+ .left{
+    height: 7%;
+    width: 9%;
+    margin-left: 0;
+    font-size: 5px;
+ }
+ .left h1{
+    font-size: 20px;
+ }
+ .code{
+    font-size: 25px;
+ }
+ .right{
+    margin-right: 25% ;
+    padding: 0px 3px;
+    display: flex;
+    flex-direction: column;
+ }
+}
